@@ -1,0 +1,39 @@
+[
+  {
+    "id": 1,
+    "title": "Hyunday Solaris, 2013, серый 1",
+    "color": "http://www.bericar.django.top-p.ru/media/vehicle/81.jpg",
+    "features": ["bags_1", "kp_m", "seats_2"],
+    "images": [
+    "http://www.bericar.django.top-p.ru/media/vehicle/hyundai-solaris-81.jpg",
+    "http://www.bericar.django.top-p.ru/media/vehicle/hyundai-solaris-92.jpg",
+    "http://www.bericar.django.top-p.ru/media/vehicle/hyundai-solaris-93.jpg"
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Hyunday Solaris, 2013, серый 2",
+    "color": "http://www.bericar.django.top-p.ru/media/vehicle/81.jpg",
+    "features": ["bags_2", "kp_a", "seats_3"],
+    "images": [
+    "http://www.bericar.django.top-p.ru/media/vehicle/hyundai-solaris-81.jpg",
+    "http://www.bericar.django.top-p.ru/media/vehicle/hyundai-solaris-92.jpg",
+    "http://www.bericar.django.top-p.ru/media/vehicle/hyundai-solaris-94.jpg"
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Hyunday Solaris, 2013, серый 3",
+    "color": "http://www.bericar.django.top-p.ru/media/vehicle/81.jpg",
+    "features": ["bags_3", "kp_m", "seats_4"],
+    "images": [
+    "http://www.bericar.django.top-p.ru/media/vehicle/hyundai-solaris-93.jpg",
+    "http://www.bericar.django.top-p.ru/media/vehicle/hyundai-solaris-94.jpg"
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Hyunday Solaris, 2013, серый 4",
+    "color": "http://www.bericar.django.top-p.ru/media/vehicle/81.jpg"
+  }
+]

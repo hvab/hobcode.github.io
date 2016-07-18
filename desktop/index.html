@@ -1,0 +1,530 @@
+<!doctype html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Главная дорога</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=1170">
+
+    <link rel="icon" href="/favicon.ico">
+
+    <link rel="stylesheet" href="main.css">
+
+    <!--[if lt IE 9]>
+      <script src="html5shiv.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <!--[if lt IE 9]>
+      <p class="browserupgrade text-xs-center">Ваш браузер <strong>устарел</strong>. Пожалуйста, <a href="//browsehappy.org">обновите</a> его для лучшего просмотра сайта.</p>
+    <![endif]-->
+
+    <header class="header fixedsticky" role="banner">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-4">
+        <a href="/" class="header-logo"><span class="sr-only">Главная дорога</span></a>
+      </div>
+      <div class="col-xs-6">
+        <div class="header-location">
+          <div class="header-location__city">
+            Прокат авто в
+            <div class="dropdown header-location-dropdown">
+              <button id="headerLocation" class="btn dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><strong>Горно-Алтайске</strong></button>
+              <div class="dropdown-menu" aria-labelledby="headerLocation">
+                <a class="dropdown-item" href="#">Новосибирске</a>
+                <a class="dropdown-item" href="#">Барнауле</a>
+              </div>
+            </div>
+            без водителя
+          </div>
+          <div class="header-location__address"><a href="#">ул. Державина, д. 13</a> <i>(вход с торца)</i></div>
+        </div>
+      </div>
+      <div class="col-xs-3">
+        <div class="header-phones">
+          <p><a href="tel:8-983-510-99-08"><span class="icon header-phones__whatsapp"></span><span class="icon header-phones__viber"></span>+7 (983) 510-99-08</a></p>
+          <div><a href="tel:8-800-250-9908"><span class="icon header-phones__callcenter"></span>8-800-250-9908</a></div>
+        </div>
+      </div>
+      <div class="col-xs-5 text-xs-right">
+        <div class="header-lang dropdown">
+          <button id="headerLang" class="btn dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><strong>RUS</strong></button>
+          <div class="dropdown-menu" aria-labelledby="headerLang">
+            <a class="dropdown-item" href="#">ENG</a>
+          </div>
+        </div>
+        <div class="header-social">
+          <a href="#" class="header-social__link header-social__link_fl"><span class="sr-only">Flamp</span></a>
+          <a href="#" class="header-social__link header-social__link_vk"><span class="sr-only">В контакте</span></a>
+          <a href="#" class="header-social__link header-social__link_fb"><span class="sr-only">Facebook</span></a>
+          <a href="#" class="header-social__link header-social__link_ig"><span class="sr-only">Instagram</span></a>
+        </div>
+        <div class="header-paycards">
+          <a href="#" class="header-paycards__link header-paycards__link_visa"><span class="sr-only">Visa</span></a>
+          <a href="#" class="header-paycards__link header-paycards__link_mastercard"><span class="sr-only">Mastercard</span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+    
+
+    
+
+<section class="index-banner-container">
+  <div class="index-banner">
+    <div class="index-banner__item" style="background-image: url(/images/index-banner__item_1.jpg);">
+      <div class="index-banner__inner container">
+        <div class="index-banner__title">Срочно нужен <br> автомобиль напрокат?</div>
+        <div class="index-banner__subtitle">Закажи его у нас!</div>
+        <div class="index-banner__btn"><a class="btn btn-banner-outline btn-lg" href="#" role="button">Выбрать авто</a></div>
+      </div>
+    </div>
+    <div class="index-banner__item" style="background-image: url(/images/index-banner__item_2.jpg);">
+      <div class="index-banner__inner container">
+        <div class="index-banner__title">Срочно нужен автомобиль напрокат? 2</div>
+        <div class="index-banner__subtitle">Закажи его у нас!</div>
+        <div class="index-banner__btn"><a class="btn btn-banner-outline btn-lg" href="#" role="button">Выбрать авто</a></div>
+      </div>
+    </div>
+  </div>
+  <div class="container index-banner__controls"></div>
+</section>
+
+<nav class="index-nav fixedsticky" role="navigation">
+  <div class="container">
+    <div class="index-nav__inner">
+      <a href="#c1" class="index-nav__link index-nav__link_active"><span>Все автомобили</span></a><a href="#c2" class="index-nav__link"><span>Экономичный</span></a><a href="#c3" class="index-nav__link"><span>Бизнес-класс</span></a><a href="#c4" class="index-nav__link"><span>Люкс</span></a><a href="#c5" class="index-nav__link"><span>Внедорожник</span></a><a href="#c6" class="index-nav__link"><span>Городской</span></a><a href="#c7" class="index-nav__link"><span>Микроавтобус</span></a>
+    </div>
+  </div>
+</nav>
+
+<section class="index-catalog">
+  <div class="container">
+    <main class="main" role="main">
+
+      <div class="index-catalog-tab index-catalog-tab_active" id="c1">
+        <div class="row">
+          <div class="col-xs-14 col-xs-offset-2">
+            <h2 class="h1 text-xs-center">Все автомобили</h2>
+            <p class="text-xs-center">Чаще всего подобные машины используются как второе транспортное средство семьи, молодожёнами и&nbsp;молодыми людьми. Для таких автомобилей эконом класса список выпускаемых моделей достаточно обширен, многие производители изготавливают схожие в&nbsp;общих чертах мини автомобили.</p>
+          </div>
+        </div>
+
+        <div class="index-catalog__list">
+          
+          
+            <div class="card catalog-card catalog-card_lg">
+  <a href="auto.html" class="catalog-card__flush-link" style="background-image: url(http://placehold.it/346x221);"></a>
+  <div class="card-block">
+    <h4 class="card-title">Honda Accord</h4>
+    <div class="catalog-card__text">
+      <div class="catalog-card__spec">2013 г/в, class E</div>
+      <div class="catalog-card__price">От <b>1445</b> руб/сут</div>
+    </div>
+    <a class="btn btn-primary" href="order.html" role="button">Заказать</a>
+  </div>
+</div>
+
+          
+            <div class="card catalog-card catalog-card_lg">
+  <a href="auto.html" class="catalog-card__flush-link" style="background-image: url(http://placehold.it/346x221);"></a>
+  <div class="card-block">
+    <h4 class="card-title">Honda Accord</h4>
+    <div class="catalog-card__text">
+      <div class="catalog-card__spec">2013 г/в, class E</div>
+      <div class="catalog-card__price">От <b>1445</b> руб/сут</div>
+    </div>
+    <a class="btn btn-primary" href="order.html" role="button">Заказать</a>
+  </div>
+</div>
+
+          
+            <div class="card catalog-card catalog-card_lg">
+  <a href="auto.html" class="catalog-card__flush-link" style="background-image: url(http://placehold.it/346x221);"></a>
+  <div class="card-block">
+    <h4 class="card-title">Honda Accord</h4>
+    <div class="catalog-card__text">
+      <div class="catalog-card__spec">2013 г/в, class E</div>
+      <div class="catalog-card__price">От <b>1445</b> руб/сут</div>
+    </div>
+    <a class="btn btn-primary" href="order.html" role="button">Заказать</a>
+  </div>
+</div>
+
+          
+            <div class="card catalog-card catalog-card_lg">
+  <a href="auto.html" class="catalog-card__flush-link" style="background-image: url(http://placehold.it/346x221);"></a>
+  <div class="card-block">
+    <h4 class="card-title">Honda Accord</h4>
+    <div class="catalog-card__text">
+      <div class="catalog-card__spec">2013 г/в, class E</div>
+      <div class="catalog-card__price">От <b>1445</b> руб/сут</div>
+    </div>
+    <a class="btn btn-primary" href="order.html" role="button">Заказать</a>
+  </div>
+</div>
+
+          
+            <div class="card catalog-card catalog-card_lg">
+  <a href="auto.html" class="catalog-card__flush-link" style="background-image: url(http://placehold.it/346x221);"></a>
+  <div class="card-block">
+    <h4 class="card-title">Honda Accord</h4>
+    <div class="catalog-card__text">
+      <div class="catalog-card__spec">2013 г/в, class E</div>
+      <div class="catalog-card__price">От <b>1445</b> руб/сут</div>
+    </div>
+    <a class="btn btn-primary" href="order.html" role="button">Заказать</a>
+  </div>
+</div>
+
+          
+            <div class="card catalog-card catalog-card_lg">
+  <a href="auto.html" class="catalog-card__flush-link" style="background-image: url(http://placehold.it/346x221);"></a>
+  <div class="card-block">
+    <h4 class="card-title">Honda Accord</h4>
+    <div class="catalog-card__text">
+      <div class="catalog-card__spec">2013 г/в, class E</div>
+      <div class="catalog-card__price">От <b>1445</b> руб/сут</div>
+    </div>
+    <a class="btn btn-primary" href="order.html" role="button">Заказать</a>
+  </div>
+</div>
+
+          
+        </div>
+      </div>
+
+      <div class="index-catalog-tab" id="c2">
+        <div class="row">
+          <div class="col-xs-14 col-xs-offset-2">
+            <h2 class="h1 text-xs-center">Экономичный класс</h2>
+            <p class="text-xs-center">Чаще всего подобные машины используются как второе транспортное средство семьи, молодожёнами и&nbsp;молодыми людьми. Для таких автомобилей эконом класса список выпускаемых моделей достаточно обширен, многие производители изготавливают схожие в&nbsp;общих чертах мини автомобили.</p>
+          </div>
+        </div>
+
+        <div class="index-catalog__list">
+          
+            <div class="card catalog-card catalog-card_lg">
+  <a href="auto.html" class="catalog-card__flush-link" style="background-image: url(http://placehold.it/346x221);"></a>
+  <div class="card-block">
+    <h4 class="card-title">Honda Accord</h4>
+    <div class="catalog-card__text">
+      <div class="catalog-card__spec">2013 г/в, class E</div>
+      <div class="catalog-card__price">От <b>1445</b> руб/сут</div>
+    </div>
+    <a class="btn btn-primary" href="order.html" role="button">Заказать</a>
+  </div>
+</div>
+
+          
+            <div class="card catalog-card catalog-card_lg">
+  <a href="auto.html" class="catalog-card__flush-link" style="background-image: url(http://placehold.it/346x221);"></a>
+  <div class="card-block">
+    <h4 class="card-title">Honda Accord</h4>
+    <div class="catalog-card__text">
+      <div class="catalog-card__spec">2013 г/в, class E</div>
+      <div class="catalog-card__price">От <b>1445</b> руб/сут</div>
+    </div>
+    <a class="btn btn-primary" href="order.html" role="button">Заказать</a>
+  </div>
+</div>
+
+          
+            <div class="card catalog-card catalog-card_lg">
+  <a href="auto.html" class="catalog-card__flush-link" style="background-image: url(http://placehold.it/346x221);"></a>
+  <div class="card-block">
+    <h4 class="card-title">Honda Accord</h4>
+    <div class="catalog-card__text">
+      <div class="catalog-card__spec">2013 г/в, class E</div>
+      <div class="catalog-card__price">От <b>1445</b> руб/сут</div>
+    </div>
+    <a class="btn btn-primary" href="order.html" role="button">Заказать</a>
+  </div>
+</div>
+
+          
+            <div class="card catalog-card catalog-card_lg">
+  <a href="auto.html" class="catalog-card__flush-link" style="background-image: url(http://placehold.it/346x221);"></a>
+  <div class="card-block">
+    <h4 class="card-title">Honda Accord</h4>
+    <div class="catalog-card__text">
+      <div class="catalog-card__spec">2013 г/в, class E</div>
+      <div class="catalog-card__price">От <b>1445</b> руб/сут</div>
+    </div>
+    <a class="btn btn-primary" href="order.html" role="button">Заказать</a>
+  </div>
+</div>
+
+          
+            <div class="card catalog-card catalog-card_lg">
+  <a href="auto.html" class="catalog-card__flush-link" style="background-image: url(http://placehold.it/346x221);"></a>
+  <div class="card-block">
+    <h4 class="card-title">Honda Accord</h4>
+    <div class="catalog-card__text">
+      <div class="catalog-card__spec">2013 г/в, class E</div>
+      <div class="catalog-card__price">От <b>1445</b> руб/сут</div>
+    </div>
+    <a class="btn btn-primary" href="order.html" role="button">Заказать</a>
+  </div>
+</div>
+
+          
+            <div class="card catalog-card catalog-card_lg">
+  <a href="auto.html" class="catalog-card__flush-link" style="background-image: url(http://placehold.it/346x221);"></a>
+  <div class="card-block">
+    <h4 class="card-title">Honda Accord</h4>
+    <div class="catalog-card__text">
+      <div class="catalog-card__spec">2013 г/в, class E</div>
+      <div class="catalog-card__price">От <b>1445</b> руб/сут</div>
+    </div>
+    <a class="btn btn-primary" href="order.html" role="button">Заказать</a>
+  </div>
+</div>
+
+          
+        </div>
+      </div>
+
+      <div class="index-catalog-tab" id="c3">
+        <div class="row">
+          <div class="col-xs-14 col-xs-offset-2">
+            <h2 class="h1 text-xs-center">Бизнес-класс</h2>
+            <p class="text-xs-center">Чаще всего подобные машины используются как второе транспортное средство семьи, молодожёнами и&nbsp;молодыми людьми. Для таких автомобилей эконом класса список выпускаемых моделей достаточно обширен, многие производители изготавливают схожие в&nbsp;общих чертах мини автомобили.</p>
+          </div>
+        </div>
+
+        <div class="index-catalog__list">
+          
+            <div class="card catalog-card catalog-card_lg">
+  <a href="auto.html" class="catalog-card__flush-link" style="background-image: url(http://placehold.it/346x221);"></a>
+  <div class="card-block">
+    <h4 class="card-title">Honda Accord</h4>
+    <div class="catalog-card__text">
+      <div class="catalog-card__spec">2013 г/в, class E</div>
+      <div class="catalog-card__price">От <b>1445</b> руб/сут</div>
+    </div>
+    <a class="btn btn-primary" href="order.html" role="button">Заказать</a>
+  </div>
+</div>
+
+          
+            <div class="card catalog-card catalog-card_lg">
+  <a href="auto.html" class="catalog-card__flush-link" style="background-image: url(http://placehold.it/346x221);"></a>
+  <div class="card-block">
+    <h4 class="card-title">Honda Accord</h4>
+    <div class="catalog-card__text">
+      <div class="catalog-card__spec">2013 г/в, class E</div>
+      <div class="catalog-card__price">От <b>1445</b> руб/сут</div>
+    </div>
+    <a class="btn btn-primary" href="order.html" role="button">Заказать</a>
+  </div>
+</div>
+
+          
+            <div class="card catalog-card catalog-card_lg">
+  <a href="auto.html" class="catalog-card__flush-link" style="background-image: url(http://placehold.it/346x221);"></a>
+  <div class="card-block">
+    <h4 class="card-title">Honda Accord</h4>
+    <div class="catalog-card__text">
+      <div class="catalog-card__spec">2013 г/в, class E</div>
+      <div class="catalog-card__price">От <b>1445</b> руб/сут</div>
+    </div>
+    <a class="btn btn-primary" href="order.html" role="button">Заказать</a>
+  </div>
+</div>
+
+          
+            <div class="card catalog-card catalog-card_lg">
+  <a href="auto.html" class="catalog-card__flush-link" style="background-image: url(http://placehold.it/346x221);"></a>
+  <div class="card-block">
+    <h4 class="card-title">Honda Accord</h4>
+    <div class="catalog-card__text">
+      <div class="catalog-card__spec">2013 г/в, class E</div>
+      <div class="catalog-card__price">От <b>1445</b> руб/сут</div>
+    </div>
+    <a class="btn btn-primary" href="order.html" role="button">Заказать</a>
+  </div>
+</div>
+
+          
+            <div class="card catalog-card catalog-card_lg">
+  <a href="auto.html" class="catalog-card__flush-link" style="background-image: url(http://placehold.it/346x221);"></a>
+  <div class="card-block">
+    <h4 class="card-title">Honda Accord</h4>
+    <div class="catalog-card__text">
+      <div class="catalog-card__spec">2013 г/в, class E</div>
+      <div class="catalog-card__price">От <b>1445</b> руб/сут</div>
+    </div>
+    <a class="btn btn-primary" href="order.html" role="button">Заказать</a>
+  </div>
+</div>
+
+          
+            <div class="card catalog-card catalog-card_lg">
+  <a href="auto.html" class="catalog-card__flush-link" style="background-image: url(http://placehold.it/346x221);"></a>
+  <div class="card-block">
+    <h4 class="card-title">Honda Accord</h4>
+    <div class="catalog-card__text">
+      <div class="catalog-card__spec">2013 г/в, class E</div>
+      <div class="catalog-card__price">От <b>1445</b> руб/сут</div>
+    </div>
+    <a class="btn btn-primary" href="order.html" role="button">Заказать</a>
+  </div>
+</div>
+
+          
+        </div>
+      </div>
+
+      <div class="text-xs-center"><button type="button" id="indexCatalogMore" class="btn btn-primary btn-lg">Смотреть еще авто</button></div>
+
+    </main>
+  </div>
+</section>
+
+<section class="offers">
+  <div class="container">
+
+    <h2 class="h1 text-xs-center offers__title">Специальные предложения</h2>
+
+    <div class="offers-slider">
+      
+      <div class="offers-slider__item">
+        <div class="card catalog-card">
+  <a href="auto.html" class="catalog-card__flush-link" style="background-image: url(http://placehold.it/346x221);"></a>
+  <div class="card-block">
+    <h4 class="card-title">Honda Accord</h4>
+    <div class="catalog-card__text">
+      <div class="catalog-card__spec">2013 г/в, class E</div>
+      <div class="catalog-card__price">От <b>1445</b> руб/сут</div>
+    </div>
+    <a class="btn btn-primary btn-sm" href="order.html" role="button">Заказать</a>
+  </div>
+</div>
+
+      </div>
+      
+      <div class="offers-slider__item">
+        <div class="card catalog-card">
+  <a href="auto.html" class="catalog-card__flush-link" style="background-image: url(http://placehold.it/346x221);"></a>
+  <div class="card-block">
+    <h4 class="card-title">Honda Accord</h4>
+    <div class="catalog-card__text">
+      <div class="catalog-card__spec">2013 г/в, class E</div>
+      <div class="catalog-card__price">От <b>1445</b> руб/сут</div>
+    </div>
+    <a class="btn btn-primary btn-sm" href="order.html" role="button">Заказать</a>
+  </div>
+</div>
+
+      </div>
+      
+      <div class="offers-slider__item">
+        <div class="card catalog-card">
+  <a href="auto.html" class="catalog-card__flush-link" style="background-image: url(http://placehold.it/346x221);"></a>
+  <div class="card-block">
+    <h4 class="card-title">Honda Accord</h4>
+    <div class="catalog-card__text">
+      <div class="catalog-card__spec">2013 г/в, class E</div>
+      <div class="catalog-card__price">От <b>1445</b> руб/сут</div>
+    </div>
+    <a class="btn btn-primary btn-sm" href="order.html" role="button">Заказать</a>
+  </div>
+</div>
+
+      </div>
+      
+      <div class="offers-slider__item">
+        <div class="card catalog-card">
+  <a href="auto.html" class="catalog-card__flush-link" style="background-image: url(http://placehold.it/346x221);"></a>
+  <div class="card-block">
+    <h4 class="card-title">Honda Accord</h4>
+    <div class="catalog-card__text">
+      <div class="catalog-card__spec">2013 г/в, class E</div>
+      <div class="catalog-card__price">От <b>1445</b> руб/сут</div>
+    </div>
+    <a class="btn btn-primary btn-sm" href="order.html" role="button">Заказать</a>
+  </div>
+</div>
+
+      </div>
+      
+      <div class="offers-slider__item">
+        <div class="card catalog-card">
+  <a href="auto.html" class="catalog-card__flush-link" style="background-image: url(http://placehold.it/346x221);"></a>
+  <div class="card-block">
+    <h4 class="card-title">Honda Accord</h4>
+    <div class="catalog-card__text">
+      <div class="catalog-card__spec">2013 г/в, class E</div>
+      <div class="catalog-card__price">От <b>1445</b> руб/сут</div>
+    </div>
+    <a class="btn btn-primary btn-sm" href="order.html" role="button">Заказать</a>
+  </div>
+</div>
+
+      </div>
+      
+    </div>
+
+  </div>
+</section>
+
+
+
+
+    <footer class="footer" role="contentinfo">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-5 col-xs-offset-1">
+        <div class="footer-contacts">
+          <div class="footer-contacts__item footer-contacts__address">
+            <strong>г. Новосибирск,</strong><br>
+            <a href="http://#">ул. Державина, д.&nbsp;13</a> <i>(вход с&nbsp;торца)</i>
+          </div>
+          <div class="footer-contacts__item footer-contacts__email"><a href="mailto:info@bericar.ru">info@bericar.ru</a></div>
+        </div>
+        <a href="/" class="footer-logo"><span class="sr-only">Главная дорога</span></a>
+      </div>
+      <div class="col-xs-4">
+        <div class="footer-phones">
+          <p><a href="tel:8-983-510-99-08"><span class="icon footer-phones__whatsapp"></span><span class="icon footer-phones__viber"></span>+7 (983) 510-99-08</a></p>
+          <p><a href="tel:8-800-250-9908"><span class="icon footer-phones__callcenter"></span>8-800-250-9908</a></p>
+        </div>
+        <p><a href="#" class="footer-price">Скачать прайс</a></p>
+        <div class="footer-info">
+          Центр проката автомобилей «Главная дорога» предлагает полный комплекс услуг по&nbsp;аренде и&nbsp;прокату автомобилей различных марок в&nbsp;Западной Сибири.
+        </div>
+      </div>
+      <div class="col-xs-3 col-xs-offset-1">
+        <nav class="footer-nav" role="navigation">
+          <ul>
+            <li><a href="conditions.html">Условия проката</a></li>
+            <li><a href="price.html">Цены</a></li>
+            <li><a href="services.html">Дополнительные услуги</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+            <li><a href="news.html">Новости</a></li>
+            <li><a href="reviews.html">Отзывы</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="col-xs-3 col-xs-offset-1">
+        <div class="footer-social">
+          <a href="#" class="footer-social__link footer-social__link_fl">Flamp</a>
+          <a href="#" class="footer-social__link footer-social__link_vk">Вконтакте</a>
+          <a href="#" class="footer-social__link footer-social__link_fb">Facebook</a>
+          <a href="#" class="footer-social__link footer-social__link_ig">Instagram</a>
+          <a href="#" class="footer-social__link footer-social__link_yt">Youtube</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    <script src="main.js"></script>
+  </body>
+</html>

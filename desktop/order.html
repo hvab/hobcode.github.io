@@ -1,0 +1,471 @@
+<!doctype html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Главная дорога</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=1170">
+
+    <link rel="icon" href="/favicon.ico">
+
+    <link rel="stylesheet" href="main.css">
+
+    <!--[if lt IE 9]>
+      <script src="html5shiv.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <!--[if lt IE 9]>
+      <p class="browserupgrade text-xs-center">Ваш браузер <strong>устарел</strong>. Пожалуйста, <a href="//browsehappy.org">обновите</a> его для лучшего просмотра сайта.</p>
+    <![endif]-->
+
+    <header class="header fixedsticky" role="banner">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-4">
+        <a href="/" class="header-logo"><span class="sr-only">Главная дорога</span></a>
+      </div>
+      <div class="col-xs-6">
+        <div class="header-location">
+          <div class="header-location__city">
+            Прокат авто в
+            <div class="dropdown header-location-dropdown">
+              <button id="headerLocation" class="btn dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><strong>Горно-Алтайске</strong></button>
+              <div class="dropdown-menu" aria-labelledby="headerLocation">
+                <a class="dropdown-item" href="#">Новосибирске</a>
+                <a class="dropdown-item" href="#">Барнауле</a>
+              </div>
+            </div>
+            без водителя
+          </div>
+          <div class="header-location__address"><a href="#">ул. Державина, д. 13</a> <i>(вход с торца)</i></div>
+        </div>
+      </div>
+      <div class="col-xs-3">
+        <div class="header-phones">
+          <p><a href="tel:8-983-510-99-08"><span class="icon header-phones__whatsapp"></span><span class="icon header-phones__viber"></span>+7 (983) 510-99-08</a></p>
+          <div><a href="tel:8-800-250-9908"><span class="icon header-phones__callcenter"></span>8-800-250-9908</a></div>
+        </div>
+      </div>
+      <div class="col-xs-5 text-xs-right">
+        <div class="header-lang dropdown">
+          <button id="headerLang" class="btn dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><strong>RUS</strong></button>
+          <div class="dropdown-menu" aria-labelledby="headerLang">
+            <a class="dropdown-item" href="#">ENG</a>
+          </div>
+        </div>
+        <div class="header-social">
+          <a href="#" class="header-social__link header-social__link_fl"><span class="sr-only">Flamp</span></a>
+          <a href="#" class="header-social__link header-social__link_vk"><span class="sr-only">В контакте</span></a>
+          <a href="#" class="header-social__link header-social__link_fb"><span class="sr-only">Facebook</span></a>
+          <a href="#" class="header-social__link header-social__link_ig"><span class="sr-only">Instagram</span></a>
+        </div>
+        <div class="header-paycards">
+          <a href="#" class="header-paycards__link header-paycards__link_visa"><span class="sr-only">Visa</span></a>
+          <a href="#" class="header-paycards__link header-paycards__link_mastercard"><span class="sr-only">Mastercard</span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+    <nav class="nav fixedsticky" role="navigation">
+  <div class="container">
+    <div class="nav__list">
+      <a href="" class="nav__link">О компании</a>
+      <a href="" class="nav__link nav__link_active">Новости</a>
+      <a href="" class="nav__link">Условия</a>
+      <a href="" class="nav__link">Цены</a>
+      <a href="" class="nav__link">Доп услуги</a>
+      <a href="" class="nav__link">Отзывы</a>
+      <a href="" class="nav__link">Контакты</a>
+    </div>
+  </div>
+</nav>
+
+
+    
+
+  
+  <section class="mini-banner" style="background-image: url(/images/mini-banner.jpg);">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-9 col-xs-offset-9">
+        <div class="mini-banner__title">Срочно нужен автомобиль напрокат?</div>
+        <div class="mini-banner__subtitle">Закажи его у нас!</div>
+        <div class="mini-banner__btn"><a class="btn btn-banner-outline btn-block" href="#" role="button">Выбрать авто</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+  
+    <div class="container">
+      <section class="page-header">
+        <h1>Заказ автомобиля</h1>
+      </section>
+    </div>
+  
+
+  
+<div class="container">
+  <div class="row">
+    <div class="col-xs-13">
+      <main class="main" role="main">
+
+        
+
+<form action="" class="order-form" id="orderForm">
+
+  <h4 class="m-b-1">Ваши данные</h4>
+  <fieldset class="fieldset fieldset_bg">
+    <div class="row">
+      <div class="col-xs-9">
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" name="orderFormAge" class="orderForm__checkbox"> Мне есть <b>22 года</b>
+          </label>
+        </div>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" name="orderFormExp" class="orderForm__checkbox"> Мой водительский стаж <b>больше 3 лет</b>
+          </label>
+        </div>
+      </div>
+      <div class="col-xs-8 col-xs-offset-1">
+        <div class="radio">
+          <label>
+            <input type="radio" name="orderFormRF" value="yes" checked>
+            Я <b>гражданин РФ</b>
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="orderFormRF" value="no">
+            Я <b>не гражданин РФ</b>
+          </label>
+        </div>
+      </div>
+    </div>
+  </fieldset>
+
+  <fieldset class="fieldset row">
+    <div class="col-xs-12">
+      <input type="text" name="orderFormName" class="form-control" placeholder="Фамилия Имя Отчество">
+    </div>
+    <div class="col-xs-5 col-xs-offset-1">
+      <input type="tel" maxlength="11" name="orderFormPhone" class="form-control" placeholder="Телефон" required>
+    </div>
+  </fieldset>
+
+  <h4 class="m-b-1">Автомобиль</h4>
+  <fieldset class="fieldset fieldset_bg">
+    <div class="form-group">
+      <select name="orderFormModel" id="orderFormModel" class="form-control">
+        <option value="6">Hyundai Solaris</option>
+        <option value="7">Hyundai Solaris Hatch</option>
+        <option value="12">Nissan Almera</option>
+      </select>
+    </div>
+
+    <div class="form-group m-t-2">
+      <div class="order-colors">
+        <div class="order-colors__item"><b class="text-lg">Цвет авто:</b></div>
+        <div id="carSet__sets" class="order-colors__inner">
+          <div class="order-colors__item">
+            <label class="order-colors__input">
+              <input type="radio" name="orderFormCarSet" value="1" checked>
+              <span class="order-colors__indicator" style="background-image: url(http://www.bericar.django.top-p.ru/media/vehicle/81.jpg);"></span>
+            </label>
+          </div>
+          <div class="order-colors__item">
+            <label class="order-colors__input">
+              <input type="radio" name="orderFormCarSet" value="2">
+              <span class="order-colors__indicator" style="background-image: url(http://www.bericar.django.top-p.ru/media/vehicle/81.jpg);"></span>
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-group m-t-2">
+      <div class="text-lg"><b>Дополнительные опции</b></div>
+      <label class="checkbox-inline">
+        <input type="checkbox" name="orderFormGPS"> GPS
+      </label>
+      <label class="checkbox-inline">
+        <input type="checkbox" name="orderFormRadar"> Радар
+      </label>
+      <label class="checkbox-inline">
+        <input type="checkbox" name="orderFormCarSeat"> Автокресло
+      </label>
+    </div>
+
+    <div class="m-t-2">
+
+      <p class="text-lg"><b>Ваш автомобиль:</b> <span id="carSet__title">Toyota Camry, 2013, черный</span></p>
+
+      <div class="auto-features auto-features-order-form" id="carSet__features">
+        <div class="auto-features__item auto-features__item_bags_2"></div>
+        <div class="auto-features__item auto-features__item_doors_4"></div>
+        <div class="auto-features__item auto-features__item_kp_r"></div>
+        <div class="auto-features__item auto-features__item_seats_8"></div>
+      </div>
+
+      <div class="order-slider" id="carSet__images">
+        <div class="order-slider__item"><a href="http://placehold.it/800x600"><img src="http://placehold.it/800x600" class="img-fluid" alt=""></a></div>
+        <div class="order-slider__item"><a href="http://placehold.it/800x600"><img src="http://placehold.it/800x600" class="img-fluid" alt=""></a></div>
+        <div class="order-slider__item"><a href="http://placehold.it/800x600"><img src="http://placehold.it/800x600" class="img-fluid" alt=""></a></div>
+        <div class="order-slider__item"><a href="http://placehold.it/800x600"><img src="http://placehold.it/800x600" class="img-fluid" alt=""></a></div>
+      </div>
+
+    </div>
+
+  </fieldset>
+
+  <h4 class="m-b-1">Место передачи и время аренды</h4>
+  <div class="row">
+    <div class="col-xs-9">
+      <fieldset class="fieldset fieldset_bg m-r-1 order-form-date-arrow">
+        <p class="text-lg"><b>Начало аренды</b></p>
+        <div class="form-group">
+          <input class="form-control datepicker" type="text" name="orderFormDateStart" id="orderFormDateStart" placeholder="Дата" required>
+        </div>
+        <div class="form-group">
+          <input class="form-control" type="text" name="orderFormTimeStart" id="orderFormTimeStart" placeholder="Время" value="12:00" required>
+        </div>
+      </fieldset>
+    </div>
+    <div class="col-xs-9">
+      <fieldset class="fieldset fieldset_bg m-l-1">
+        <p class="text-lg"><b>Возврат авто</b></p>
+        <div class="form-group">
+          <input class="form-control datepicker" type="text" name="orderFormDateEnd" id="orderFormDateEnd" placeholder="Дата" required>
+        </div>
+        <div class="form-group">
+          <input class="form-control" type="text" name="orderFormTimeEnd" id="orderFormTimeEnd" placeholder="Время" value="12:00" required>
+        </div>
+      </fieldset>
+    </div>
+  </div>
+
+  <fieldset class="fieldset row">
+    <div class="col-xs-9">
+      <select name="orderFormCity" class="form-control">
+        <option value="">Город</option>
+        <option value="1">Option 1</option>
+        <option value="2">Option 2</option>
+        <option value="3">Option 3</option>
+      </select>
+    </div>
+    <div class="col-xs-7">
+      <select name="orderFormStreet" class="form-control">
+        <option value="">Улица</option>
+        <option value="1">Option 1</option>
+        <option value="2">Option 2</option>
+        <option value="3">Option 3</option>
+      </select>
+    </div>
+    <div class="col-xs-2">
+      <select name="orderFormHouse" class="form-control">
+        <option value="">Дом</option>
+        <option value="1">Option 1</option>
+        <option value="2">Option 2</option>
+        <option value="3">Option 3</option>
+      </select>
+    </div>
+  </fieldset>
+
+
+  <p>
+    <a data-toggle="collapse" href="#orderCollapse" aria-expanded="false" aria-controls="orderCollapse" class="content-collapse collapsed">Заполнить подробные данные на сайте</a>
+  </p>
+  <p class="text-sm text-muted p-x-1">Заполнив подробную информацию вы сможете сэкономить время <br>при заполнеии документов на аренду автомобиля</p>
+  <div class="collapse" id="orderCollapse">
+
+    <fieldset class="fieldset row">
+      <div class="col-xs-12">
+        <input type="email" name="orderFormEmail" class="form-control" placeholder="E-mail">
+      </div>
+      <div class="col-xs-5 col-xs-offset-1">
+        <input type="text" name="orderFormBirthdate" class="form-control datepicker" placeholder="Дата рождения">
+      </div>
+    </fieldset>
+
+    <h4>Паспортные данные</h4>
+    <fieldset class="fieldset row">
+      <div class="col-xs-4">
+        <div class="form-group">
+          <input type="text" name="orderFormPassportSeries" class="form-control" placeholder="Серия">
+        </div>
+      </div>
+      <div class="col-xs-7 col-xs-offset-1">
+        <div class="form-group">
+          <input type="text" name="orderFormPassportNumber" class="form-control" placeholder="Номер">
+        </div>
+      </div>
+      <div class="col-xs-5 col-xs-offset-1">
+        <div class="form-group">
+          <input type="text" name="orderFormPassportDate" class="form-control datepicker" placeholder="Дата выдачи">
+        </div>
+      </div>
+      <div class="col-xs-18">
+        <div class="form-group">
+          <input type="text" name="orderFormPassportPlace" class="form-control" placeholder="Кем выдан">
+        </div>
+      </div>
+      <div class="col-xs-18">
+        <input type="text" name="orderFormPassportRegistration" class="form-control" placeholder="Место прописки">
+      </div>
+    </fieldset>
+
+    <h4>Водительское удостоверение</h4>
+    <fieldset class="fieldset row">
+      <div class="col-xs-4">
+        <div class="form-group">
+          <input type="text" name="orderFormLicenseSeries" class="form-control" placeholder="Серия">
+        </div>
+      </div>
+      <div class="col-xs-7 col-xs-offset-1">
+        <div class="form-group">
+          <input type="text" name="orderFormLicenseNumber" class="form-control" placeholder="Номер">
+        </div>
+      </div>
+      <div class="col-xs-5 col-xs-offset-1">
+        <div class="form-group">
+          <input type="text" name="orderFormLicenseDate" class="form-control datepicker" placeholder="Дата выдачи">
+        </div>
+      </div>
+    </fieldset>
+
+  </div>
+
+  <div class="row m-t-3">
+    <div class="col-xs-9">
+      <div class="order-in-total m-r-1">
+        <div class="h4">Стоимость аренды</div>
+        <div class="order-in-total__text"><big id="orderInTotalDays">0</big> <span id="orderInTotalDays_name">суток</span></div>
+        <div class="order-in-total__text"><big id="orderInTotalPriceAll">0</big> руб</div>
+        <div class="order-in-total__sale">С учетом скидки <big id="orderInTotalDiscount">0%</big></div>
+      </div>
+    </div>
+    <div class="col-xs-9">
+      <div class="order-submit m-l-1">
+        <div class="h4">Залог <span><big id="orderSubmitPledge">0</big> руб</span></div>
+        <div class="checkbox m-y-2">
+          <label>
+            <input type="checkbox" name="orderFormConditions" value="" class="orderForm__checkbox">
+            Ознакомлен с <a href="conditions.html" target="_blank">условиями аренды</a>
+          </label>
+        </div>
+        <button type="submit" class="btn btn-primary btn-lg btn-block">Заказать автомобиль</button>
+        <div class="text-danger m-t-1 text-sm" id="orderForm__dangerText"></div>
+      </div>
+    </div>
+  </div>
+
+</form>
+
+
+
+      </main>
+    </div>
+    <div class="col-xs-5">
+      <aside class="aside" role="complementary">
+        
+  <div class="aside-add">
+  <div class="h4 aside-add__title">Вам также понравится</div>
+  
+    <div class="card catalog-card">
+  <a href="auto.html" class="catalog-card__flush-link" style="background-image: url(http://placehold.it/346x221);"></a>
+  <div class="card-block">
+    <h4 class="card-title">Honda Accord</h4>
+    <div class="catalog-card__text">
+      <div class="catalog-card__spec">2013 г/в, class E</div>
+      <div class="catalog-card__price">От <b>1445</b> руб/сут</div>
+    </div>
+    <a class="btn btn-primary btn-sm" href="order.html" role="button">Заказать</a>
+  </div>
+</div>
+
+  
+    <div class="card catalog-card">
+  <a href="auto.html" class="catalog-card__flush-link" style="background-image: url(http://placehold.it/346x221);"></a>
+  <div class="card-block">
+    <h4 class="card-title">Honda Accord</h4>
+    <div class="catalog-card__text">
+      <div class="catalog-card__spec">2013 г/в, class E</div>
+      <div class="catalog-card__price">От <b>1445</b> руб/сут</div>
+    </div>
+    <a class="btn btn-primary btn-sm" href="order.html" role="button">Заказать</a>
+  </div>
+</div>
+
+  
+  <a class="btn btn-primary-outline btn-sm btn-block" href="/" role="button">смотреть Больше авто</a>
+</div>
+
+
+      </aside>
+    </div>
+  </div>
+</div>
+
+
+
+
+    <footer class="footer" role="contentinfo">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-5 col-xs-offset-1">
+        <div class="footer-contacts">
+          <div class="footer-contacts__item footer-contacts__address">
+            <strong>г. Новосибирск,</strong><br>
+            <a href="http://#">ул. Державина, д.&nbsp;13</a> <i>(вход с&nbsp;торца)</i>
+          </div>
+          <div class="footer-contacts__item footer-contacts__email"><a href="mailto:info@bericar.ru">info@bericar.ru</a></div>
+        </div>
+        <a href="/" class="footer-logo"><span class="sr-only">Главная дорога</span></a>
+      </div>
+      <div class="col-xs-4">
+        <div class="footer-phones">
+          <p><a href="tel:8-983-510-99-08"><span class="icon footer-phones__whatsapp"></span><span class="icon footer-phones__viber"></span>+7 (983) 510-99-08</a></p>
+          <p><a href="tel:8-800-250-9908"><span class="icon footer-phones__callcenter"></span>8-800-250-9908</a></p>
+        </div>
+        <p><a href="#" class="footer-price">Скачать прайс</a></p>
+        <div class="footer-info">
+          Центр проката автомобилей «Главная дорога» предлагает полный комплекс услуг по&nbsp;аренде и&nbsp;прокату автомобилей различных марок в&nbsp;Западной Сибири.
+        </div>
+      </div>
+      <div class="col-xs-3 col-xs-offset-1">
+        <nav class="footer-nav" role="navigation">
+          <ul>
+            <li><a href="conditions.html">Условия проката</a></li>
+            <li><a href="price.html">Цены</a></li>
+            <li><a href="services.html">Дополнительные услуги</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+            <li><a href="news.html">Новости</a></li>
+            <li><a href="reviews.html">Отзывы</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="col-xs-3 col-xs-offset-1">
+        <div class="footer-social">
+          <a href="#" class="footer-social__link footer-social__link_fl">Flamp</a>
+          <a href="#" class="footer-social__link footer-social__link_vk">Вконтакте</a>
+          <a href="#" class="footer-social__link footer-social__link_fb">Facebook</a>
+          <a href="#" class="footer-social__link footer-social__link_ig">Instagram</a>
+          <a href="#" class="footer-social__link footer-social__link_yt">Youtube</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    <script src="main.js"></script>
+  </body>
+</html>
